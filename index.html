@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReaderCircle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>ReaderCircle</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>The God of Small Things</h2>
+            <h5>Arundhati Roy</h5>
+            <p>Set in the lush landscape of Kerala, The God of Small Things is a poignant tale of love, loss, and the complexities of familial and societal relationships. The novel revolves around the lives of twins, Estha and Rahel, whose childhood is forever altered by a series of tragic events that reveal the stark inequalities and rigid caste system in India. Arundhati Roy masterfully intertwines past and present, using evocative language to portray the beauty and heartbreak of everyday life. The book addresses profound themes such as forbidden love, the repercussions of societal norms, and the significance of seemingly small moments that shape lives.</p>
+            <button class="delete-button">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form id="book-form">
+            <input type="text" placeholder="Book Title" id="book-title" required>
+            <input type="text" placeholder="Book Author" id="book-author" required>
+            <textarea placeholder="Short Description" id="book-description" required></textarea>
+            <button type="submit" class="form-button">Add</button>
+            <button type="button" id="cancel-popup" class="form-button">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="open-popup">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
